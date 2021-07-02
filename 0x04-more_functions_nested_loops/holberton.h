@@ -2,5 +2,7 @@
 #define HOLBERTON_H
 
 #include <stdio.h>
-int _isupper(int c)
+
+int _isupper(int c);
+
 #endif /* HOLBERTON_H */
