@@ -1,11 +1,11 @@
 #include "holberton.h"
 
 /**
- * main - check the code for Holberton School students.
- *
- * Return: Always 0.
+ * reset_to_98 - Reset to 98.
+ * @n: Pointed variable
+ * Return: Never
  */
 void reset_to_98(int *n)
 {
-	*ptr = 98;
+	*n = 98;
 }
