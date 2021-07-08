@@ -2,7 +2,7 @@
 
 /**
  * mul - Multiply two integers.
- * @result: answers multiplication variable.
+ * @result - answers multiplication variable.
  * @a: multiplied variable.
  * @b: second variable.
  * Return: Never
