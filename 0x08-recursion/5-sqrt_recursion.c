@@ -13,6 +13,7 @@ int square_root(int a, int square)
 		return (square);
 	}
 	if (square * square > a)
+	{
 		return (-1);
 	}
 	return (square_root(a, square + 1));
