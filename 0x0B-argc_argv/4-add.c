@@ -25,7 +25,7 @@ int main(int argc, char *argv[])
 		for (x = 0; argv[n][x] != '\0'; x++)
 		{
 			before = argv[n][x];
-			if (isdigit(sum) == 0)
+			if (isdigit(before) == 0)
 			{
 				printf("Error\n");
 				return (1);
