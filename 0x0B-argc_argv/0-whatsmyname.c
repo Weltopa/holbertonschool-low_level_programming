@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * Main - Print name of program.
+ * main - Print name of program.
  * @argc: number of string.
  * @argv: pointer.
  * Return: never.
