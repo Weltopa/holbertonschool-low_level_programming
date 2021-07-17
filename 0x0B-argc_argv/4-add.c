@@ -30,7 +30,8 @@ int main(int argc, char *argv[])
 				printf("Error\n");
 				return (1);
 			}
-			after += atoi(argv[n]);
+		}
+		after += atoi(argv[n]);
 	}
 	printf("%d\n", after);
 	return (0);
