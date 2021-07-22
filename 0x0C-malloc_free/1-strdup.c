@@ -7,7 +7,7 @@
  * Return: NULL if Insufficient.
 Char *_strdup(char *str)
 {
-	char *new_Str;
+	char *new_str;
 	int i;
 	int length = 0;
 
