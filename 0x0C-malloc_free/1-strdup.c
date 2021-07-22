@@ -5,6 +5,7 @@
  * _strdup - Return pointer to copy.
  * @str: Source string
  * Return: NULL if Insufficient.
+ */
 char *_strdup(char *str)
 {
 	char *new_str;
