@@ -1,5 +1,6 @@
 #include "holberton.h"
 #include <stdlib.h>
+#include <string.h>
 
 /**
  * string_nconcat - To Concatenate two strings, skip characters.
@@ -27,7 +28,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		size2++;
 	if (n < size2)
 		size2 = n;
-	con_str = malloc((size1 + size2 + 1) * sizeof(char));
+	con_str = malloc(sizeof(char) * (strlen(s1) + strlen(s2) + 1));
 	if (con_str == NULL)
 		return (NULL);
 
