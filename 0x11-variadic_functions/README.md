@@ -1,1 +1,1 @@
-EADME file for Variadic functions.
+README file for Variadic functions.
