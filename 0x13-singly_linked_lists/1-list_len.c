@@ -1,6 +1,4 @@
 #include "lists.h"
-#include <stdio.h>
-#include <stdlib.h>
 
 /**
  * list_len - counts parts of list.
@@ -11,13 +9,9 @@
 
 size_t list_len(const list_t *h)
 {
-	const list_t *ptr = h;
-	size_t node_count = 0;
+	int len;
 
-	while (ptr != NULL)
-	{
-		node_count++;
-		ptr = ptr->next;
-	}
-	return (node_count);
+	for (len = 0; h != NULL; len++)
+		h = h->next;
+	return (len);
 }
