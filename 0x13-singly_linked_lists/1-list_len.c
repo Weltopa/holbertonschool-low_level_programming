@@ -9,7 +9,7 @@
  * Return: number of nodes.
  */
 
-size_t list_len(const list_t *h;
+size_t list_len(const list_t *h
 {
 	const list_t *ptr = h;
 	size_t node_count = 0;
