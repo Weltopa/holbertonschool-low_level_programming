@@ -47,7 +47,7 @@ int main(int argc, char **argv)
 	int f1, f2, reed, written, closepls;
 	char buffer[1024];
 
-	if (arg != 3)
+	if (argc != 3)
 	{
 		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
 		exit(97);
@@ -55,7 +55,7 @@ int main(int argc, char **argv)
 	f1 = open(argv[1], O_RDONLY);
 	if (f1 < 0)
 		read_err(argv[1]);
-	f2 = open(argv[2], O_WRONLY | O_TRUNC | _APPEND);
+	f2 = open(argv[2], O_WRONLY | O_TRUNC | O_APPEND);
 	if (f2 < 0)
 	{
 		f2 = open(argv[2], O_WRONLY | O_CREAT | O_APPEND, 0664);
