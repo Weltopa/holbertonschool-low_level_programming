@@ -1,7 +1,6 @@
 #include "lists.h"
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
 
 /**
  * dlistint_len - length of doubly linked list.
@@ -10,17 +9,13 @@
  */
 size_t dlistint_len(const dlistint_t *h)
 {
-	const dlistint_t *current = NULL;
-	unsigned int node = 0;
+	const dlistint_t *temp;
+	size_t node_count;
 
-	if (h)
-	{
-		current = h;
-		while (current)
-		{
-			node++;
-			current = current->next;
-		}
-	}
-	return (node);
+	if (h == NULL)
+		return (0);
+	temp = h;
+	for (node_count = 0; temp != NULL; node_count++)
+		temp = temp->next;
+	return (node_count);
 }
